@@ -9,25 +9,26 @@ class VehicleA {
   }
 
   void info() {
-    super.info();
     print('Brand: $brand, Year: $year');
   }
 }
 
-// class VehicleB {
-//   String brand;
-//   int year;
+abstract class VehicleB { // truu tuong : ghi de
+// su khac biet giua abstract class va interface ; abstract class khong dung duoc static, con interface co the dung
+// 
+  String brand;
+  int year;
 
-//   VehicleB(this.brand, this.year);
+  VehicleB(this.brand, this.year);
 
-//   void startEngine() {
-//     print('$brand engine started.');
-//   }
+  void startEngine() {
+    print('$brand engine started.');
+  }
 
-//   void info() {
-//     print('Brand: $brand, Year: $year');
-//   }
-// }
+  void info() {
+    print('Brand: $brand, Year: $year');
+  }
+}
 
 class Car extends VehicleA { 
   int numberOfDoors;
